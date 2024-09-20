@@ -12,7 +12,12 @@ body {
     -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
 }
 
-
+/* Adjust font size for smaller devices */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 1.2rem; /* Smaller font size for phones */
+    }
+}
 
 /* Background Layer */
 .bg {
@@ -80,13 +85,14 @@ section {
 /* Home Section Specific Styles */
 #home {
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 60px;
 }
+
 
 /* About, Research, and Contact Sections without flexbox */
 #about {
@@ -373,6 +379,18 @@ section {
     line-height: 1.6; /* Improves readability */
     color: #000; /* Text color set to black */
     text-align: left;
+}
+
+
+/* Adjust network icon size for mobile */
+@media (max-width: 767.98px) {
+    .network-icons a {
+        font-size: 1.2rem; /* Smaller size for better fit */
+    }
+
+    .big-icon {
+        font-size: 2rem; /* Smaller icon size */
+    }
 }
 
 /* Center the button */
