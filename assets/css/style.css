@@ -5,13 +5,36 @@ html {
 }
 
 /* Apply Garamond to body text */
-body {
-    font-family: 'Garamond', serif; /* Set Garamond as the font for body text */
+/* body {
+    font-family: 'Garamond', serif; Set Garamond as the font for body text
     font-size: 1.5rem;
     background: url('../img/background.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
+} */
+
+body {
+    font-family: 'Garamond', serif; /* Set Garamond as the font for body text */
+    font-size: 1.5rem;
+    background: url('../img/background.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+
+html, body {
+    height: 100%; /* Ensures body fills entire viewport */
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-attachment: scroll; /* Fallback for mobile Safari */
+    }
+}
+
 
 /* Apply Garamond to headings */
 h1, h2, h3 {
@@ -234,29 +257,30 @@ section {
     display: block;
     margin: 0 auto;
     width: 70%;
-    height: 70%;
+    max-width: 250px; /* Limit max size for larger screens */
+    height: auto; /* Let the height adjust based on aspect ratio */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 40px; /* Adds space between image and icons */
+    margin-bottom: 40px; /* Space between image and icons */
     margin-top: 30px;
 }
-
 
 /* Adjust profile picture size for sm and md breakpoints */
 @media (max-width: 767.98px) { /* sm */
     .profile-pic {
-        width: 60%; /* Adjust size as needed */
-        height: auto; /* Maintain aspect ratio */
+        width: 60%;
+        max-width: 150px; /* Smaller max size for small screens */
+        height: auto;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { /* md */
     .profile-pic {
-        width: 45%; /* Adjust size as needed */
-        height: auto; /* Maintain aspect ratio */
+        width: 45%;
+        max-width: 200px;
+        height: auto;
     }
 }
-
 
 .paper-title {
     font-weight: bold;
