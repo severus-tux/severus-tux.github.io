@@ -95,12 +95,27 @@ section {
 
 
 .card {
-    background-color: rgba(255, 255, 255, 0.4); /* Transparent white */
+    background-color: rgba(255, 255, 255, 0.8); /* Less transparent for better visibility */
     border: none;
     border-radius: 0.5rem;
-    backdrop-filter: blur(10px); /* Blur the background behind the card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-left: 20px;
+    position: relative; /* Ensure positioning context */
+    z-index: 1; /* Adjust as necessary */
+}
+
+/* Optional fallback for non-supporting browsers */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Fallback background */
+    border-radius: 0.5rem; /* Match the card's border radius */
+    z-index: -1; /* Ensure it sits behind the content */
 }
 
 .talks .card {
