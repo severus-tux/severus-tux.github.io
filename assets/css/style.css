@@ -162,7 +162,7 @@ section {
     top: 90px; /* Sticks the title to the top of the viewport */
     padding-top: 0px; /* Optional padding */
     font-weight: bold;
-    z-index: 1030; /* Ensure it's above the rest of the content */
+    z-index: 50; /* Ensure it's above the rest of the content */
 }
 
 .sticky-title h1{
