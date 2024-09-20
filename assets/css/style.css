@@ -1,39 +1,59 @@
-
-/* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
 }
-
-/* Apply Garamond to body text */
-/* body {
-    font-family: 'Garamond', serif; Set Garamond as the font for body text
-    font-size: 1.5rem;
-    background: url('../img/background.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-    background-size: cover;
-} */
 
 body {
     font-family: 'Garamond', serif; /* Set Garamond as the font for body text */
     font-size: 1.5rem;
-    background: url('../img/background.jpg') no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
-html, body {
-    height: 100%; /* Ensures body fills entire viewport */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
 }
 
-@supports (-webkit-touch-callout: none) {
-    body {
-        background-attachment: scroll; /* Fallback for mobile Safari */
+
+
+/* Background Layer */
+.bg {
+    background: url('../img/background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    position: fixed; /* Fixes the background in place */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Pushes the background behind everything else */
+}
+
+/* Content Layer */
+.content {
+    position: relative; /* Ensure the content stays above the background */
+    padding: 2rem; /* Add some padding to keep content away from the edges */
+    z-index: 1; /* Ensure it's above the background */
+    padding: 0;
+    margin: 0;
+}
+
+/* Optional: Ensure content starts slightly lower (e.g., avoiding overlap with navbar) */
+@media (max-width: 767.98px) { /* Small devices */
+    .content {
+        margin-top: 3rem; /* Adjust margin as needed to avoid content going behind navbar */
     }
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices */
+    .content {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices and above */
+    .content {
+        margin-top: 5rem;
+    }
+}
+
 
 
 /* Apply Garamond to headings */
@@ -103,19 +123,6 @@ section {
     padding-left: 20px;
     position: relative; /* Ensure positioning context */
     z-index: 1; /* Adjust as necessary */
-}
-
-/* Optional fallback for non-supporting browsers */
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Fallback background */
-    border-radius: 0.5rem; /* Match the card's border radius */
-    z-index: -1; /* Ensure it sits behind the content */
 }
 
 .talks .card {
@@ -204,7 +211,7 @@ section {
 }
 
 .sticky-title h1{
-    font-size: 3rem; /* Make the title bigger */
+    font-size: 2.8rem; /* Make the title bigger */
 }
 
 /* Adjustments for larger screens */
