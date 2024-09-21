@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">Asif Khan</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,21 +113,51 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Fusce at odio ac odio egestas fermentum.</p>
-
-            <h3>Education</h3>
-            <ul>
-                <li>PhD in Computer Science - XYZ University</li>
-                <li>MSc in Data Science - ABC University</li>
-                <li>BSc in Information Technology - DEF University</li>
-            </ul>
-
-            <a href="#" class="btn btn-primary">DOWNLOAD CV</a>
-
+            <div class="modal-body row">
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-6 col-xxl-6">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi saepe veniam error cum autem amet, quisquam, blanditiis ratione assumenda esse repellat similique explicabo hic non. Nulla minima nisi unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi non, assumenda inventore tenetur iure alias autem, nulla veritatis soluta, ex et velit! Temporibus, cumque laudantium iste ex magnam maiores.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6 col-xxl-6">
+                    <div class="container">
+                        <h2>Education</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- <h6 class="card-title">Education</h6> -->
+                                        <div id="content">
+                                            <ul class="timeline">
+                                                <li class="event" data-date="2020 - Present">
+                                                    <h4>PhD in Computer Science</h4>
+                                                    <p>Chennai Mathematical Institute</p>
+                                                </li>
+                                                <li class="event" data-date="2018 - 2020">
+                                                    <h4>MSc in Computer Science</h4>
+                                                    <p>IIT Madras</p>
+                                                </li>
+                                                <li class="event" data-date="2014 - 2018">
+                                                    <h4>B.Tech in Computer Science</h4>
+                                                    <p>Aligarh Muslim University, UP</p>
+                                                </li>
+                                                <li class="event" data-date="2007 - 2014">
+                                                    <h4>High School</h4>
+                                                    <p>Jawahar Navodaya Vidyalaya, Maharajganj</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
         </div>
-        
     </section>
+    
+    
 
     <!-- Research Section -->
     <section id="research">
