@@ -82,7 +82,7 @@ section {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
     padding: 50px 0; /* Space inside sections */
-    /* height: 100vh; */
+    min-height: 100vh;
     /* display: flex; */
 }
 
@@ -139,6 +139,7 @@ section {
     line-height: 1.5rem;
     font-weight: 500;
 }
+
 .card-title a{
     padding-left: 10px;
 }
@@ -162,6 +163,16 @@ section {
     font-size: 1.3rem;
     font-style: italic;
     padding-left: 0px;
+}
+
+@media (max-width: 767.98px) {
+    .card-title {
+        font-size: 1.3rem; /* Smaller font size for phones */
+    }
+
+    .card-text-coauthors, .card-text-summary, .card-text-venue {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -355,7 +366,6 @@ section {
     overflow: hidden; /* Prevents overflow issues */
     padding: 15px;    /* Small padding on all sides */
     font-family: 'Garamond', serif; /* Good font for readability */
-    font-size: 1.5rem; /* Slightly larger font size */
     line-height: 1.6; /* Improves readability */
     color: #000; /* Text color set to black */
     text-align: left;
