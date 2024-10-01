@@ -121,6 +121,10 @@ section {
     background-color: rgba(243, 230, 230, 0.7);
 }
 
+.working .card {
+    background-color: rgba(234, 235, 255, 0.7);
+}
+
 /* Margin for large screens and above */
 /* @media (min-width: 992px) {
     .card {
@@ -219,7 +223,7 @@ section {
 /* Adjustments for larger screens */
 @media (min-width: 1200px) {
     .sticky-title h1{
-        font-size: 3.5rem; /* Make the title bigger */
+        font-size: 3.2rem; /* Make the title bigger */
     }
 }
 
@@ -235,7 +239,10 @@ section {
 
 /* Brand styling */
 .navbar-brand {
-    font-size: 1.5rem; /* Slightly larger font size for the brand */
+    font-size: 2rem; /* Slightly larger font size for the brand */
+    font-family: 'Tangerine', cursive;
+    /* text-decoration: underline; */
+    /* border-bottom: #000; */
 }
 
 /* Navbar items spacing */
