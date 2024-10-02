@@ -22,7 +22,7 @@ body {
 
 /* Background Layer */
 .bg {
-    background: url('../img/background.jpg') no-repeat center center;
+    background: url('../img/sea.jpg') no-repeat center center;
     background-size: cover; /* Ensure the background image covers the entire area */
     position: fixed; /* Fixes the background in place */
     top: 0;
@@ -104,6 +104,20 @@ section {
     /* display: flex; */
 }
 
+
+.events{
+    padding-left: 10pt;
+}
+
+.event-list{
+    padding-top: 10pt;
+    padding-bottom: 20pt;
+}
+
+.events h2{  
+    /* padding-bottom: 10pt; */
+    /* background-color: red; */
+}
 
 
 .card {
