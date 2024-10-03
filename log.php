@@ -1,6 +1,6 @@
 <?php
 // Open the SQLite3 database
-$db = new SQLite3('visitors.db');
+$db = new SQLite3('stat/visitors.db');
 
 // Get the visitor's IP address
 $ip = $_SERVER['REMOTE_ADDR'];
