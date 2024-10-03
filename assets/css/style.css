@@ -279,10 +279,11 @@ section {
 /* Navbar Collapse Styles */
 .navbar-collapse {
     position: fixed; /* Makes the dropdown overlay the content */
-    top: 56px; /* Adjust based on your navbar height */
+    top: 73px; /* Adjust based on your navbar height */
     left: 0;
     width: 100%;
     background-color: #f8f9fa; /* Semi-transparent background */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Slight shadow to the bottom */
     z-index: 1050; /* Higher than the content */
     overflow-y: auto; /* Allows scrolling if content overflows */
 }
