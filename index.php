@@ -314,8 +314,8 @@ include('log.php');
                     <!-- Research Card 1 -->
                     <div class="card my-3 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Existence of EFX for Three Additive Valuations 
-                                <a href="#" class="link-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                            <h5 class="card-title">EFX Exists for Three Types of Agents 
+                                <a href="https://arxiv.org/pdf/2410.13580" class="link-primary"><i class="fa-solid fa-file-pdf"></i></a>
                             </h5>
                             <p class="card-text-coauthors">with 
                                 <a href="https://iitpkd.ac.in/user/16558" target="_blank" rel="noopener" class="link-secondary">Pratik Ghosal</a>,
