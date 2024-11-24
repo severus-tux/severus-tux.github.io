@@ -1,3 +1,30 @@
+:root {
+    /* Color Variables */
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --background-color: rgba(0, 0, 0, 0.7);
+    --overlay-light: rgba(255, 255, 255, 0.2);
+    --overlay-dark: rgba(0, 0, 0, 0.1);
+    --text-color: #000;
+    --text-color-light: #fff;
+    --card-bg-color-paper: rgb(243, 243, 243);
+    --card-bg-color-talks: rgba(243, 230, 230, 0.7);
+    --card-bg-color-preprints: rgba(255, 255, 255, 0.7);
+    --link-color: #007bff;
+    --link-hover-color: #ffcc00;
+    --icon-color: #333;
+    --icon-hover-color: #007bff;
+
+    /* Blur Variables */
+    --blur-light: blur(10px);
+    --blur-medium: blur(20px);
+}
+
+a {
+    text-decoration: none !important; /* Remove underline from links */
+}
+
+/* Global Styles */
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
@@ -18,7 +45,6 @@ body {
         font-size: 1.2rem; /* Smaller font size for phones */
     }
 }
-
 
 /* Background Layer */
 .bg {
@@ -41,17 +67,16 @@ body {
     margin: 0;
 }
 
-
-
-/* Apply Garamond to headings */
+/* Typography */
 h1, h2, h3 {
-    font-family: 'Garamond', serif; 
+    font-family: 'Garamond', serif; /* Apply Garamond to headings */
 }
+
 section {
     padding: 80px 0;
 }
 
-/* Override Bootstrap's container styles for larger screens */
+/* Container Adjustments for Larger Screens */
 @media (min-width: 1200px) { /* XL screens */
     .container {
         max-width: 1200px; /* Adjust as needed */
@@ -66,7 +91,7 @@ section {
 
 /* Home Section Specific Styles */
 #home {
-    color: #fff;
+    color: var(--text-color-light);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -75,77 +100,54 @@ section {
     padding-top: 60px;
 }
 
+/* About, Research, and Contact Sections */
+#about, #research, #contact {
+    padding: 40px 0; /* Space inside sections */
+    backdrop-filter: var(--blur-medium);
+    -webkit-backdrop-filter: var(--blur-medium); /* For Safari compatibility */
+    background-color: var(--overlay-light); /* Optional overlay for readability */
+}
 
-/* About, Research, and Contact Sections without flexbox */
-#about {
-    background-color: rgba(255, 255, 255, 0.2); /*Optional overlay for readability*/
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
-    padding: 50px 0; /* Space inside sections */
+#about, #research{
     min-height: 100vh;
-    /* display: flex; */
 }
 
- #research {
-    background-color: rgba(0, 0, 0, 0.1); /* Optional overlay for readability */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
-    padding: 50px 0; /* Space inside sections */
-    /* height: 100vh; */
-    /* display: flex; */
-}
-
-#contact {
-    background-color: rgba(255, 255, 255, 0.2); /* Optional overlay for readability */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); For Safari compatibility
-    padding: 50px 0; /* Space inside sections */
-    /* height: 100vh; */
-    /* display: flex; */
-}
-
-
-.events{
+/* Events Section */
+.events {
     padding-left: 10pt;
 }
 
-.event-list{
+.event-list {
     padding-top: 10pt;
     padding-bottom: 20pt;
 }
 
-.events h2{  
+.events h2 {
     /* padding-bottom: 10pt; */
     /* background-color: red; */
 }
 
-
+/* Card Styles */
 .card {
-    background-color: rgb(243, 243, 243); /* Less transparent for better visibility */
+    background-color: var(--card-bg-color-paper); /* Less transparent for better visibility */
     border: none;
     border-radius: 0.5rem;
-    /* backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); For Safari compatibility */
+    /* backdrop-filter: var(--blur-light);
+    -webkit-backdrop-filter: var(--blur-light); For Safari compatibility */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-left: 20px;
     position: relative; /* Ensure positioning context */
+    border: 1px solid #b4b4b4;
     /* z-index: 1; Adjust as necessary */
 }
+
 .talks .card {
-    background-color: rgba(243, 230, 230, 0.7);
+    background-color: var(--card-bg-color-talks);
 }
 
 .working .card {
-    background-color: rgba(234, 235, 255, 0.7);
+    background-color: var(--card-bg-color-preprints);
 }
-
-/* Margin for large screens and above */
-/* @media (min-width: 992px) {
-    .card {
-        margin: 10rem;
-    }
-} */
-
 
 .card-body {
     padding: 1.5rem;
@@ -159,31 +161,27 @@ section {
     font-weight: 500;
 }
 
-.card-title a{
+.card-title a {
     padding-left: 10px;
 }
 
-.card-text-coauthors {
+.card-text-coauthors, .card-text-summary, .card-text-venue {
     margin-bottom: 0rem;
     font-size: 1.3rem;
-    /* padding-left: 20px; */
 }
 
 .card-text-summary {
-    margin-bottom: 0rem;
-    font-size: 1.3rem;
     display: flex;
     flex-direction: column; /* Stack content vertically */
     justify-content: space-between; /* Space between text and link */
 }
 
 .card-text-venue {
-    margin-bottom: 0rem;
-    font-size: 1.3rem;
     font-style: italic;
     padding-left: 0px;
 }
 
+/* Adjustments for smaller devices */
 @media (max-width: 767.98px) {
     .card-title {
         font-size: 1.3rem; /* Smaller font size for phones */
@@ -206,7 +204,6 @@ section {
     margin-bottom: 20px; /* Add space when open */
 }
 
-
 /* Read more link */
 .read-more {
     align-self: flex-end; /* Aligns the link to the right */
@@ -215,12 +212,7 @@ section {
     transition: color 0.5s ease; /* Smooth color transition */
 }
 
-
-
-
-
-
-/* Ensure the sticky title remains fixed after reaching the top */
+/* Sticky Title */
 .sticky-title {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
@@ -230,20 +222,16 @@ section {
     z-index: 50; /* Ensure it's above the rest of the content */
 }
 
-.sticky-title h1{
+.sticky-title h1 {
     font-size: 2.8rem; /* Make the title bigger */
 }
 
 /* Adjustments for larger screens */
 @media (min-width: 1200px) {
-    .sticky-title h1{
+    .sticky-title h1 {
         font-size: 3.2rem; /* Make the title bigger */
     }
 }
-
-
-
-
 
 /* Navbar styling */
 .navbar {
@@ -271,10 +259,9 @@ section {
 
 /* Active nav item styling */
 .navbar-nav .nav-link.active {
-    color: #007bff; /* Color for the active link */
+    color: var(--primary-color); /* Color for the active link */
     /*font-weight: bold;  Optional: Makes the active link bold */
 }
-
 
 /* Navbar Collapse Styles */
 .navbar-collapse {
@@ -282,12 +269,11 @@ section {
     top: 73px; /* Adjust based on your navbar height */
     left: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Semi-transparent background */
+    background-color: var(--secondary-color); /* Semi-transparent background */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Slight shadow to the bottom */
     z-index: 1050; /* Higher than the content */
     overflow-y: auto; /* Allows scrolling if content overflows */
 }
-
 
 /* Ensure that desktop view remains unaffected */
 @media (min-width: 992px) {
@@ -297,10 +283,7 @@ section {
     }
 }
 
-
-
-
-
+/* Profile Picture */
 .profile-pic {
     display: block;
     margin: 0 auto;
@@ -328,28 +311,54 @@ section {
     }
 }
 
+/* Article Styles */
+.article-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100%;            /* Full height for vertical centering */
+}
 
-.paper-title {
+.article-style {
+    overflow: hidden; /* Prevents overflow issues */
+    padding: 15px;    /* Small padding on all sides */
+    font-family: 'Garamond', serif; /* Good font for readability */
+    line-height: 1.6; /* Improves readability */
+    color: var(--text-color); /* Text color set to black */
+    text-align: left;
+}
+
+/* Center the button */
+.article-style .btn-page-header {
+    display: block; /* Change to block to use margin auto */
+    width: fit-content; /* Fit the button’s width to its content */
+    margin: 20px auto 0; /* Center horizontally with auto margins */
+    text-align: center; /* Center the text inside the button */
+}
+
+/* Footer */
+footer {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--background-color);
+    backdrop-filter: var(--blur-medium);
+    -webkit-backdrop-filter: var(--blur-medium); /* For Safari compatibility */
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+    color: var(--text-color-light);
+    text-decoration: underline;
     font-weight: bold;
 }
 
-.authors a {
-    text-decoration: none;
-    color: #007bff; /* Bootstrap primary color */
+.scroll-to-top:hover {
+    color: var(--link-hover-color);
 }
 
-.paper-links a {
-    text-decoration: none;
-    color: #007bff; /* Bootstrap primary color */
-    margin-right: 10px;
-}
-
-.paper-links i {
-    margin-right: 5px;
-}
-
-
-
+/* Network Icons */
 .network-icons {
     list-style: none;
     padding: 0;
@@ -363,37 +372,15 @@ section {
 }
 
 .network-icons a {
-    color: #333;
+    color: var(--icon-color);
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .network-icons a:hover {
-    color: #007bff;
+    color: var(--icon-hover-color);
 }
-
-/* .big-icon {
-    font-size: 2.5rem;
-} */
-
-
-.article-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 100%;            /* Full height for vertical centering */
-}
-
-.article-style {
-    overflow: hidden; /* Prevents overflow issues */
-    padding: 15px;    /* Small padding on all sides */
-    font-family: 'Garamond', serif; /* Good font for readability */
-    line-height: 1.6; /* Improves readability */
-    color: #000; /* Text color set to black */
-    text-align: left;
-}
-
 
 /* Adjust network icon size for mobile */
 @media (max-width: 767.98px) {
@@ -406,33 +393,22 @@ section {
     }
 }
 
-/* Center the button */
-.article-style .btn-page-header {
-    display: block; /* Change to block to use margin auto */
-    width: fit-content; /* Fit the button’s width to its content */
-    margin: 20px auto 0; /* Center horizontally with auto margins */
-    text-align: center; /* Center the text inside the button */
-}
-
-
-footer {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
-    color: #fff;
-    text-align: center;
-}
-
-.scroll-to-top {
-    color: #fff;
-    text-decoration: underline;
+/* Paper Styles */
+.paper-title {
     font-weight: bold;
 }
 
-.scroll-to-top:hover {
-    color: #ffcc00;
+.authors a {
+    text-decoration: none;
+    color: var(--link-color); /* Bootstrap primary color */
 }
 
+.paper-links a {
+    text-decoration: none;
+    color: var(--link-color); /* Bootstrap primary color */
+    margin-right: 10px;
+}
 
+.paper-links i {
+    margin-right: 5px;
+}

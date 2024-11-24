@@ -1,5 +1,4 @@
-
-
+/* Timeline container */
 .timeline {
     position: relative;
     border-left: 2px solid transparent; /* Keep original border, but make it transparent */
@@ -23,7 +22,7 @@
     background: #8e8e8e; /* Use the original border color */
 }
 
-
+/* Responsive adjustments for screens smaller than 767px */
 @media (max-width: 767px) {
     .timeline {
         max-width: 98%;
@@ -39,6 +38,7 @@
     }
 }
 
+/* Individual event container */
 .timeline .event {
     border-bottom: 1px dashed #ced1d6;
     padding-bottom: 5px;
@@ -46,29 +46,34 @@
     position: relative;
 }
 
-.timeline .event p{
+/* Event paragraph styling */
+.timeline .event p {
     font-size: 1.3rem;
     line-height: 1.4rem;
     font-style: italic;
 }
 
-.timeline .event h4{
+/* Event heading styling */
+.timeline .event h4 {
     font-size: 1.3rem;
     line-height: 1.4rem;
 }
 
+/* Responsive adjustments for event container on screens smaller than 767px */
 @media (max-width: 767px) {
     .timeline .event {
         padding-top: 30px;
     }
 }
 
+/* Styling for the last event in the timeline */
 .timeline .event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
 }
 
+/* Pseudo-elements for event date and marker */
 .timeline .event:before,
 .timeline .event:after {
     position: absolute;
@@ -76,6 +81,7 @@
     top: 0;
 }
 
+/* Event date styling */
 .timeline .event:before {
     left: -207px;
     content: attr(data-date);
@@ -85,6 +91,7 @@
     min-width: 120px;
 }
 
+/* Responsive adjustments for event date on screens smaller than 767px */
 @media (max-width: 767px) {
     .timeline .event:before {
         left: 0px;
@@ -92,8 +99,8 @@
     }
 }
 
+/* Event marker styling */
 .timeline .event:after {
-
     left: -55.8px;
     background: #6b6666;
     border-radius: 50%;
@@ -103,6 +110,7 @@
     top: 5px;
 }
 
+/* Responsive adjustments for event marker on screens smaller than 767px */
 @media (max-width: 767px) {
     .timeline .event:after {
         left: -31.8px;
