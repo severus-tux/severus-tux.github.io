@@ -13,7 +13,7 @@ $deadlines = [
         'abstract' => '2024-07-15', 
         'full_paper' => '2024-07-15', 
         'notification' => '2024-06-15',
-        'venue' => 'Edinburgh, United Kingdom'
+        'venue' => 'Edinburgh, UK'
     ],
     'AAAI' => [
         'url' => 'https://aaai.org/conference/aaai/aaai-25/', 
@@ -21,6 +21,13 @@ $deadlines = [
         'full_paper' => '2024-08-15', 
         'notification' => '2024-12-09',
         'venue' => 'Philadelphia, USA'
+    ],
+    'ITCS' => [
+        'url' => 'http://itcs-conf.org/', 
+        'abstract' => '2024-09-03', 
+        'full_paper' => '2024-09-05', 
+        'notification' => '2024-11-02',
+        'venue' => 'New York, USA'
     ],
     'AAMAS' => [
         'url' => 'https://aamas2025.org/', 
@@ -57,12 +64,26 @@ $deadlines = [
         'notification' => '2025-05-17',
         'venue' => 'Stanford, USA'
     ],
+    'ICALP' => [
+        'url' => 'https://conferences.au.dk/icalp2025', 
+        'abstract' => '2025-02-08', 
+        'full_paper' => '2025-02-08', 
+        'notification' => '2025-04-14',
+        'venue' => 'Aarhus, Denmark'
+    ],
     'FOCS' => [
         'url' => 'https://focs.computer.org/2024/', 
         'abstract' => '2024-04-04', 
         'full_paper' => '2024-04-04', 
         'notification' => '2024-07-01',
         'venue' => 'Chicago, USA'
+    ],
+    'ESA' => [
+        'url' => 'https://algo-conference.org/2024/esa/', 
+        'abstract' => '2024-04-22', 
+        'full_paper' => '2024-04-22', 
+        'notification' => '2024-06-23',
+        'venue' => 'Egham, UK'
     ],
     'NeurIPS' => [
         'url' => 'https://neurips.cc/Conferences/2024', 
@@ -78,6 +99,8 @@ $deadlines = [
         'notification' => '2024-07-05',
         'venue' => 'Amsterdam, Netherlands'
     ]
+
+
 ];
 
 
@@ -192,7 +215,7 @@ function formatDateWithSuffix($date) {
                     <li class="nav-item divider"></li>
                     <!-- External Link -->
                     <li class="nav-item">
-                        <a class="nav-link active external-link" href="resources.html">
+                        <a class="nav-link active external-link" href="resources.php">
                             Resources <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                         </a>
                     </li>
