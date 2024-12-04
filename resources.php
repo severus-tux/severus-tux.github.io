@@ -8,6 +8,13 @@ $deadlines = [
         'notification' => '2024-10-15',
         'venue' => 'Louisiana, USA'
     ],
+    'WINE' => [
+        'url' => 'https://wine2024.org/', 
+        'abstract' => '2024-07-15', 
+        'full_paper' => '2024-07-15', 
+        'notification' => '2024-06-15',
+        'venue' => 'Edinburgh, United Kingdom'
+    ],
     'AAAI' => [
         'url' => 'https://aaai.org/conference/aaai/aaai-25/', 
         'abstract' => '2024-08-07', 
@@ -70,13 +77,6 @@ $deadlines = [
         'full_paper' => '2024-05-26', 
         'notification' => '2024-07-05',
         'venue' => 'Amsterdam, Netherlands'
-    ],
-    'WINE' => [
-        'url' => 'https://wine2024.org/', 
-        'abstract' => '2024-07-15', 
-        'full_paper' => '2024-07-15', 
-        'notification' => '2024-06-15',
-        'venue' => 'Edinburgh, United Kingdom'
     ]
 ];
 
