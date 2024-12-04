@@ -325,7 +325,6 @@ section {
     left: 0;
     width: 100%;
     background-color: var(--secondary-color); /* Semi-transparent background */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Slight shadow to the bottom */
     z-index: 1050; /* Higher than the content */
     overflow-y: auto; /* Allows scrolling if content overflows */
 }
@@ -335,6 +334,12 @@ section {
     .navbar-collapse {
         position: static; /* Keep static for larger screens */
         display: flex; /* Show normally in desktop mode */
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow to the bottom */
     }
 }
 
