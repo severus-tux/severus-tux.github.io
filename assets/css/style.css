@@ -108,9 +108,10 @@ section {
     background-color: var(--overlay-light); /* Optional overlay for readability */
 }
 
-#about, #research{
+#about, #research, #resources{
     min-height: 100vh;
 }
+
 
 /* Events Section */
 .events {
@@ -250,6 +251,66 @@ section {
 .navbar-nav .nav-link {
     font-size: 1.3rem; /* Slightly larger font size for nav links */
 }
+
+
+
+/* Divider Styling for Larger Screens (Default) */
+.nav-item.divider {
+    display: flex; /* Ensures it's inline by default */
+    align-items: center;
+    padding: 0 1px;
+    color: #ddd; /* Neutral color for the divider */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.nav-item.divider::before {
+    content: '|'; /* Add vertical line for larger screens */
+}
+
+@media (max-width: 991px) {
+    .nav-item.divider::before {
+        content: none; /* Disable for smaller screens */
+    }
+}
+
+/* Divider Styling for Collapsed Navbar */
+@media (max-width: 991px) { /* Adjust breakpoint as needed */
+    .navbar-collapse .nav-item.divider {
+        display: block; /* Switch to block display */
+        width: 100%; /* Make it span full width */
+        height: 1px; /* Thin horizontal line */
+        background-color: #ddd; /* Neutral color for the line */
+        margin: 10px 0; /* Add spacing above and below */
+    }
+
+    /* Hide the vertical line */
+    .navbar-collapse .nav-item.divider::before {
+        content: none; /* Prevent the vertical | from appearing */
+    }
+}
+
+
+
+
+/* External Link Styling */
+.nav-link.external-link {
+    /* color: #007bff; Highlight color for external links */
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link.external-link i {
+    font-size: 0.85rem; /* Smaller icon size */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+/* Optional Hover Effect */
+.nav-link.external-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker highlight on hover */
+}
+
 
 /* Active nav item styling */
 .navbar-nav .nav-link.active {
