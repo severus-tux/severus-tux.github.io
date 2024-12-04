@@ -54,7 +54,7 @@ $deadlines = [
         'url' => 'https://2025.ijcai.org/', 
         'abstract' => '2025-01-16', 
         'full_paper' => '2025-01-23', 
-        'notification' => '2024-04-10',
+        'notification' => '2025-04-28',
         'venue' => 'Montreal, Canada'
     ],
     'EC' => [
