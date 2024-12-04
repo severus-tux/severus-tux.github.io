@@ -1,4 +1,8 @@
 <?php
+// Set cache-control headers for 24 hours
+header("Cache-Control: max-age=86400, public");
+header("Expires: " . gmdate("D, d M Y H:i:s", time() + 86400) . " GMT");
+
 // PHP code to define the conference deadlines, URLs, and venues
 $deadlines = [
     'SODA' => [
