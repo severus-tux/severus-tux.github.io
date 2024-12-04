@@ -1,7 +1,7 @@
 /* Basic Table Styling */
 .table {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     border: 1px solid #a9a9a9; /* Slightly lighter border for the table */
     font-size: 1.5rem;
     border-radius: 8px; /* Rounded corners for a softer look */
