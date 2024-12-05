@@ -1,11 +1,27 @@
 /* Basic Table Styling */
+
+.table_wrapper {
+    overflow: auto; /* Both horizontal and vertical scroll for tables that overflow */
+    max-height: 80vh; /* Ensure the table height is within the visible screen */
+    margin-top: 20px; /* Space between the table and other content */
+}
+
 .table {
+    margin-bottom: 0px;
     width: 100%;
-    margin-top: 20px;
+    /* height: 100%; */
+    /* margin-top: 20px; */
     border: 1px solid #a9a9a9; /* Slightly lighter border for the table */
     font-size: 1.5rem;
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+}
+
+.table th {
+    position: sticky;
+    position: -webkit-sticky; /* Sticky header for better navigation */
+    top: 0px;
+    z-index: 50; /* Ensure the header stays above other content */
 }
 
 .table th, .table td {

@@ -239,8 +239,8 @@ function formatDateWithSuffix($date) {
     <section id="resources">
         <div class="container mt-4" >
             <h1>Conference Tracker</h1>
-            <div style="overflow-x:auto">
-                <table class="table table-bordered">
+            <div class="table_wrapper">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>Conference</th>
