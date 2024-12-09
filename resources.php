@@ -237,6 +237,30 @@ function formatDateWithSuffix($date) {
     </nav>
 
     <section id="resources">
+        <div class="container mt-4">
+            <h1>My Talks: Slides & Recordings</h1>
+                <ul>
+                    <li>
+                        Popular matchings with one sided preferences - <a href="https://algo.csa.iisc.ac.in/winterschool24/" target="_blank"><em>TCS winter school, IISC</em></a>, <em>Dec 2024</em>. 
+                        <a href="https://nc.vishwaprakash.com/index.php/s/GR2mC9P3sK6LFc9" target="_blank"><i class="fa fa-file-pdf"></i></a> 
+                        <a href="https://www.youtube.com/watch?v=sHIb4tAs_G8&list=PLmx4utxjUQD6GVpJs1_e0IbdsW1kGqnbj&index=5" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        Dulmage-Mendelsohn decomposition - <a href="https://algo.csa.iisc.ac.in/winterschool24/" target="_blank"><em>TCS winter school, IISC</em></a>, <em>Dec 2024</em>. 
+                        <a href="https://nc.vishwaprakash.com/index.php/s/AztSCtFeMCo9XMK" target="_blank"><i class="fa fa-file-pdf"></i></a> 
+                        <a href="https://www.youtube.com/watch?v=sHIb4tAs_G8&list=PLmx4utxjUQD6GVpJs1_e0IbdsW1kGqnbj&index=5" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        Proportional Allocations of Indivisible resources: Insights via Matchings - <em>Dartmouth</em>, <em>March 2024</em>. 
+                        <a href="https://nc.vishwaprakash.com/index.php/s/m85GpbHLsM6HSNY" target="_blank"><i class="fa fa-file-pdf"></i></a> 
+                        <a href="https://youtu.be/z8J5vKQT-rQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        Diverse Stable Matching - <em>IIT Delhi</em>, <em>2023</em>. 
+                        <a href="https://nc.vishwaprakash.com/index.php/s/wbfjeCxAZfXYJ9G" target="_blank"><i class="fa fa-file-pdf"></i></a>
+                    </li>
+                </ul>
+        </div>
         <div class="container mt-4" >
             <h1>Conference Tracker</h1>
             <div class="table_wrapper">
