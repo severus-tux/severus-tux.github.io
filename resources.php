@@ -241,6 +241,11 @@ function formatDateWithSuffix($date) {
             <h1>My Talks: Slides & Recordings</h1>
                 <ul>
                     <li>
+                        EFX Exists for Three Types of Agents - <a href="https://www.tcs.tifr.res.in/~amd-24/schedule.html#prakash" target="_blank"><em>AMD Workshop, FSTTCS, IIT Gandhinagar</em></a>, <em>Dec 2024</em>. 
+                        <a href="https://nc.vishwaprakash.com/index.php/s/H76H8qs7D4snyfJ" target="_blank"><i class="fa fa-file-pdf"></i></a> 
+                        <a href="https://www.youtube.com/live/zBQFJ8hHp1U?si=HYV6NLcZ98xae6ZM" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
                         Popular matchings with one sided preferences - <a href="https://algo.csa.iisc.ac.in/winterschool24/" target="_blank"><em>TCS winter school, IISC</em></a>, <em>Dec 2024</em>. 
                         <a href="https://nc.vishwaprakash.com/index.php/s/GR2mC9P3sK6LFc9" target="_blank"><i class="fa fa-file-pdf"></i></a> 
                         <a href="https://www.youtube.com/watch?v=sHIb4tAs_G8&list=PLmx4utxjUQD6GVpJs1_e0IbdsW1kGqnbj&index=5" target="_blank"><i class="fab fa-youtube"></i></a>
