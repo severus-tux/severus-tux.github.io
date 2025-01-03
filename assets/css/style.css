@@ -123,6 +123,37 @@ section {
     padding-bottom: 20pt;
 }
 /* Card Styles */
+
+.bookmark {
+    position: absolute; /* Place it relative to the card */
+    top: -7px; /* Slightly outside the card */
+    left: -7px; /* Slightly outside the card */
+    width: 35px; /* Width of the bookmark */
+    height: 45px; /* Height of the bookmark */
+    /* background-color: #007bff; Blue background for the bookmark */
+    color: white; /* White text color */
+    font-weight: normal; /* Bold text */
+    font-size: 1rem; /* Adjust text size */
+    display: flex; /* Center the text */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%); /* Triangle cut-out at the bottom */
+    z-index: 10; /* Ensure it stays above the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a realistic effect */
+}
+
+.conference{
+    background-color: #5A6F7C;
+}
+.preprint{
+    background-color: #A89F91;
+}
+
+.journal{
+    background-color: #C48D8F;
+}
+
 .card {
     background-color: var(--card-bg-color-paper); /* Less transparent for better visibility */
     border: none;
@@ -218,7 +249,58 @@ section {
 }
 
 .sticky-title h1 {
-    font-size: 2.8rem; /* Make the title bigger */
+    font-size.card {
+        background-color: var(--card-bg-color-paper); /* Less transparent for better visibility */
+        border: none;
+        border-radius: 0.5rem;
+        /* backdrop-filter: var(--blur-light);
+        -webkit-backdrop-filter: var(--blur-light); For Safari compatibility */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-left: 20px;
+        position: relative; /* Ensure positioning context */
+        border: 1px solid #b4b4b4;
+        /* z-index: 1; Adjust as necessary */
+    }
+    
+    .talks .card {
+        background-color: var(--card-bg-color-talks);
+    }
+    
+    .working .card {
+        background-color: var(--card-bg-color-preprints);
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .card-title {
+        font-family: "Raleway", serif;
+        font-size: 1.4rem;
+        /* font-weight: bold; */
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .card-title a {
+        padding-left: 10px;
+    }
+    
+    .card-text-coauthors, .card-text-summary, .card-text-venue {
+        margin-bottom: 0rem;
+        font-size: 1.3rem;
+    }
+    
+    .card-text-summary {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: space-between; /* Space between text and link */
+    }
+    
+    .card-text-venue {
+        font-style: italic;
+        padding-left: 0px;
+    }: 2.8rem; /* Make the title bigger */
 }
 
 /* Adjustments for larger screens */
