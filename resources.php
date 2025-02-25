@@ -76,11 +76,11 @@ $deadlines = [
         'venue' => 'Aarhus, Denmark'
     ],
     'FOCS' => [
-        'url' => 'https://focs.computer.org/2024/', 
-        'abstract' => '2024-04-04', 
-        'full_paper' => '2024-04-04', 
-        'notification' => '2024-07-01',
-        'venue' => 'Chicago, USA'
+        'url' => 'https://focs.computer.org/2025/', 
+        'abstract' => '2025-04-03', 
+        'full_paper' => '2025-04-03', 
+        'notification' => '2024-07-08',
+        'venue' => 'Sydney, Australia'
     ],
     'ESA' => [
         'url' => 'https://algo-conference.org/2024/esa/', 
