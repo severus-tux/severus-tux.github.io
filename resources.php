@@ -83,11 +83,11 @@ $deadlines = [
         'venue' => 'Sydney, Australia'
     ],
     'ESA' => [
-        'url' => 'https://algo-conference.org/2024/esa/', 
-        'abstract' => '2024-04-22', 
-        'full_paper' => '2024-04-22', 
+        'url' => 'https://algo-conference.org/2025/esa/', 
+        'abstract' => '2025-04-21', 
+        'full_paper' => '2025-04-21', 
         'notification' => '2024-06-23',
-        'venue' => 'Egham, UK'
+        'venue' => 'Warsaw, Poland'
     ],
     'NeurIPS' => [
         'url' => 'https://neurips.cc/Conferences/2024', 
