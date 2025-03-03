@@ -90,11 +90,11 @@ $deadlines = [
         'venue' => 'Warsaw, Poland'
     ],
     'NeurIPS' => [
-        'url' => 'https://neurips.cc/Conferences/2024', 
-        'abstract' => '2024-05-15', 
-        'full_paper' => '2024-05-22', 
-        'notification' => '2024-09-26',
-        'venue' => 'Vancouver, Canada'
+        'url' => 'https://neurips.cc/Conferences/2025', 
+        'abstract' => '2025-05-11', 
+        'full_paper' => '2025-05-15', 
+        'notification' => '2025-09-18',
+        'venue' => 'San Diego, USA'
     ],
     'SAGT' => [
         'url' => 'https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/', 
