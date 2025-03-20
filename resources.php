@@ -89,6 +89,13 @@ $deadlines = [
         'notification' => '2025-06-23',
         'venue' => 'Warsaw, Poland'
     ],
+    'COMSOC' => [
+        'url' => 'https://www.ac.tuwien.ac.at/comsoc2025/', 
+        'abstract' => '2025-05-08', 
+        'full_paper' => '2025-05-08', 
+        'notification' => '2025-07-15',
+        'venue' => 'Vienna, Austria'
+    ],
     'NeurIPS' => [
         'url' => 'https://neurips.cc/Conferences/2025', 
         'abstract' => '2025-05-11', 
@@ -102,13 +109,6 @@ $deadlines = [
         'full_paper' => '2024-05-26', 
         'notification' => '2024-07-05',
         'venue' => 'Amsterdam, Netherlands'
-    ],
-    'COMSOC' => [
-        'url' => 'https://www.ac.tuwien.ac.at/comsoc2025/', 
-        'abstract' => '2025-05-08', 
-        'full_paper' => '2025-05-08', 
-        'notification' => '2025-07-15',
-        'venue' => 'Vienna, Austria'
     ]
 
 
