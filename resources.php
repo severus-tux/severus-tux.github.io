@@ -104,11 +104,11 @@ $deadlines = [
         'venue' => 'San Diego, USA'
     ],
     'SAGT' => [
-        'url' => 'https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/', 
-        'abstract' => '2024-05-22', 
-        'full_paper' => '2024-05-26', 
-        'notification' => '2024-07-05',
-        'venue' => 'Amsterdam, Netherlands'
+        'url' => 'https://www.bath.ac.uk/events/the-18th-international-symposium-on-algorithmic-game-theory/', 
+        'abstract' => '2025-05-20', 
+        'full_paper' => '2025-05-23', 
+        'notification' => '2025-07-30',
+        'venue' => 'Bath, UK'
     ]
 
 
