@@ -478,6 +478,40 @@ section {
     text-align: center; /* Center the text inside the button */
 }
 
+
+/* Custom Alert Styling */
+.custom-alert {
+    font-size: 1.35rem;
+    font-weight: 500;
+    background-color: rgba(255, 243, 205, 0.5); /* light warning with slight transparency */
+    border-left: 4px solid #ffc107; /* standard Bootstrap warning color */
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    color: #5d4037; /* dark brown text for good contrast */
+}
+
+.alert-icon {
+    color: #ff9800;
+    font-size: 1.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 767.98px) {
+    .custom-alert {
+        font-size: 1.1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .alert-icon {
+        font-size: 1.3rem;
+        margin-right: 0.75rem;
+    }
+}
+
+
+
 /* Footer */
 footer {
     padding-top: 2rem;
