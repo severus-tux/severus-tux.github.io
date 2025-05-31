@@ -26,19 +26,19 @@ $deadlines = [
         'notification' => '2025-11-03',
         'venue' => 'Singapore'
     ],
-    'ITCS' => [
-        'url' => 'http://itcs-conf.org/', 
-        'abstract' => '2024-09-03', 
-        'full_paper' => '2024-09-05', 
-        'notification' => '2024-11-02',
-        'venue' => 'New York, USA'
-    ],
     'AAMAS' => [
         'url' => 'https://cyprusconferences.org/aamas2026/call-for-papers-main-track/', 
         'abstract' => '2025-09-25', 
         'full_paper' => '2025-10-02', 
         'notification' => '2025-12-23',
         'venue' => 'Paphos, Cyprus'
+    ],
+    'ITCS' => [
+        'url' => 'http://itcs-conf.org/', 
+        'abstract' => '2024-09-03', 
+        'full_paper' => '2024-09-05', 
+        'notification' => '2024-11-02',
+        'venue' => 'New York, USA'
     ],
     'STOC' => [
         'url' => 'https://acm-stoc.org/stoc2025/', 
