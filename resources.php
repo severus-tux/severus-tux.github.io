@@ -6,25 +6,25 @@ header("Expires: " . gmdate("D, d M Y H:i:s", time() + 86400) . " GMT");
 // PHP code to define the conference deadlines, URLs, and venues
 $deadlines = [
     'SODA' => [
-        'url' => 'https://www.siam.org/conferences-events/siam-conferences/soda25/', 
-        'abstract' => '2024-07-05', 
-        'full_paper' => '2024-07-05', 
-        'notification' => '2024-10-15',
-        'venue' => 'Louisiana, USA'
+        'url' => 'https://www.siam.org/conferences-events/siam-conferences/soda26/', 
+        'abstract' => '2025-07-14', 
+        'full_paper' => '2025-07-14', 
+        'notification' => '2025-10-15',
+        'venue' => 'Vancouver, Canada'
     ],
     'WINE' => [
-        'url' => 'https://wine2024.org/', 
-        'abstract' => '2024-07-15', 
-        'full_paper' => '2024-07-15', 
-        'notification' => '2024-06-15',
-        'venue' => 'Edinburgh, UK'
+        'url' => 'https://wine2025.cs.rutgers.edu/', 
+        'abstract' => '2025-07-03', 
+        'full_paper' => '2025-07-03', 
+        'notification' => '2025-09-15',
+        'venue' => 'Rutgers University, USA'
     ],
     'AAAI' => [
-        'url' => 'https://aaai.org/conference/aaai/aaai-25/', 
-        'abstract' => '2024-08-07', 
-        'full_paper' => '2024-08-15', 
-        'notification' => '2024-12-09',
-        'venue' => 'Philadelphia, USA'
+        'url' => 'https://aaai.org/conference/aaai/aaai-26/', 
+        'abstract' => '2025-07-25', 
+        'full_paper' => '2025-08-01', 
+        'notification' => '2025-11-03',
+        'venue' => 'Singapore'
     ],
     'ITCS' => [
         'url' => 'http://itcs-conf.org/', 
@@ -34,11 +34,11 @@ $deadlines = [
         'venue' => 'New York, USA'
     ],
     'AAMAS' => [
-        'url' => 'https://aamas2025.org/', 
-        'abstract' => '2024-10-09', 
-        'full_paper' => '2024-10-16', 
-        'notification' => '2024-12-23',
-        'venue' => 'Detroit, USA'
+        'url' => 'https://cyprusconferences.org/aamas2026/call-for-papers-main-track/', 
+        'abstract' => '2025-09-25', 
+        'full_paper' => '2025-10-02', 
+        'notification' => '2025-12-23',
+        'venue' => 'Paphos, Cyprus'
     ],
     'STOC' => [
         'url' => 'https://acm-stoc.org/stoc2025/', 
