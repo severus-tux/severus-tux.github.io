@@ -5,19 +5,20 @@ header("Expires: " . gmdate("D, d M Y H:i:s", time() + 86400) . " GMT");
 
 // PHP code to define the conference deadlines, URLs, and venues
 $deadlines = [
-    'SODA' => [
-        'url' => 'https://www.siam.org/conferences-events/siam-conferences/soda26/', 
-        'abstract' => '2025-07-14', 
-        'full_paper' => '2025-07-14', 
-        'notification' => '2025-10-15',
-        'venue' => 'Vancouver, Canada'
-    ],
+    
     'WINE' => [
         'url' => 'https://wine2025.cs.rutgers.edu/', 
         'abstract' => '2025-07-03', 
         'full_paper' => '2025-07-03', 
         'notification' => '2025-09-15',
         'venue' => 'Rutgers University, USA'
+    ],
+    'SODA' => [
+        'url' => 'https://www.siam.org/conferences-events/siam-conferences/soda26/', 
+        'abstract' => '2025-07-14', 
+        'full_paper' => '2025-07-14', 
+        'notification' => '2025-10-15',
+        'venue' => 'Vancouver, Canada'
     ],
     'AAAI' => [
         'url' => 'https://aaai.org/conference/aaai/aaai-26/', 
