@@ -7,7 +7,7 @@
     --overlay-dark: rgba(0, 0, 0, 0.1);
     --text-color: #000;
     --text-color-light: #fff;
-    --card-bg-color-paper: rgb(243, 243, 243);
+    --card-bg-color-paper: rgb(255, 254, 254);
     --card-bg-color-talks: rgba(243, 230, 230, 0.7);
     --card-bg-color-preprints: rgba(255, 255, 255, 0.7);
     --link-color: #007bff;
@@ -48,7 +48,7 @@ body {
 
 /* Background Layer */
 .bg {
-    background: url('../img/sea.jpg') no-repeat center center;
+    background: url('../img/background.png') no-repeat center center;
     background-size: cover; /* Ensure the background image covers the entire area */
     position: fixed; /* Fixes the background in place */
     top: 0;
@@ -103,9 +103,9 @@ section {
 /* About, Research, and Contact Sections */
 #about, #research, #contact {
     padding: 40px 0; /* Space inside sections */
-    backdrop-filter: var(--blur-medium);
-    -webkit-backdrop-filter: var(--blur-medium); /* For Safari compatibility */
-    background-color: var(--overlay-light); /* Optional overlay for readability */
+    /*backdrop-filter: var(--blur-medium);
+    /*-webkit-backdrop-filter: var(--blur-medium); /* For Safari compatibility */
+    /*background-color: var(--overlay-light); /* Optional overlay for readability */
 }
 
 #about, #research, #resources{
