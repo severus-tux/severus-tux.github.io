@@ -74,6 +74,7 @@ h1, h2, h3 {
 
 section {
     padding: 80px 0;
+    scroll-margin-top: 100px;
 }
 
 /* Container Adjustments for Larger Screens */
@@ -88,6 +89,8 @@ section {
         max-width: 1400px; /* Adjust as needed */
     }
 }
+
+
 
 /* Home Section Specific Styles */
 #home {
@@ -108,9 +111,9 @@ section {
     /*background-color: var(--overlay-light); /* Optional overlay for readability */
 }
 
-#about, #research, #resources{
+/* #about, #research, #resources{
     min-height: 100vh;
-}
+} */
 
 
 /* Events Section */
@@ -318,12 +321,12 @@ section {
 
 /* Brand styling */
 .navbar-brand {
-    font-size: 2rem; /* Slightly larger font size for the brand */
-    font-family: 'Tangerine', cursive;
-    /* text-decoration: underline; */
-    /* border-bottom: #000; */
+    font-family: 'EB Garamond', serif;
+    font-size: 1.65rem;
+    /* font-weight: 600; */
+    letter-spacing: 0.02em;
+    color: #3d444a;
 }
-
 /* Navbar items spacing */
 .navbar-nav .nav-item {
     margin-left: 1rem; /* Adds space between nav items */
