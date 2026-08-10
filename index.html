@@ -91,32 +91,33 @@
                     <div id="profile">
                         <img class="profile-pic" src="assets/img/me-green-smaler.jpeg" alt="Vishwa Prakash HV">
                         <ul class="network-icons" aria-hidden="true">
+                        
                             <li>
-                                <a href="https://scholar.google.com/citations?user=nIyU69UAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar">
+                                <a href="https://scholar.google.com/citations?user=nIyU69UAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Google Scholar">
                                     <img src="assets/img/Google_Scholar_logo_Small.png" alt="googleScholar" style="width: 34px; height: 34px;">
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://dblp.org/pid/279/6491.html" target="_blank" rel="noopener" aria-label="dblp">
+                                <a href="https://dblp.org/pid/279/6491.html" target="_blank" rel="noopener" aria-label="dblp" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="DBLP">
                                     <img src="assets/img/dblp-logo_Small.png" alt="dblp" style="width: 34px; height: 34px;">
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.researchgate.net/profile/Vishwa-Prakash-Hv" target="_blank" rel="noopener" aria-label="researchgate">
+                                <a href="https://www.researchgate.net/profile/Vishwa-Prakash-Hv" target="_blank" rel="noopener" aria-label="researchgate" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="ResearchGate">
                                     <img src="assets/img/ResearchGate-logo_Small.png" alt="ResearchGate" style="width: 34px; height: 34px;">
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://bsky.app/profile/vishwaprakash.com" target="_blank" rel="noopener" aria-label="bluesky">
+                                <a href="https://bsky.app/profile/vishwaprakash.com" target="_blank" rel="noopener" aria-label="bluesky" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Bluesky">
                                     <img src="assets/img/Bluesky_Logo_Small.png" alt="Bluesky" style="height: 34px;width: auto;">
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://arxiv.org/a/prakashhv_v_1.html" target="_blank" rel="noopener" aria-label="twitter">
+                                <a href="https://arxiv.org/a/prakashhv_v_1.html" target="_blank" rel="noopener" aria-label="arxiv" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Arxiv">
                                     <img src="assets/img/ArXiv_logo2_Small.png" alt="Arxiv" style=" height: 34px;">
                                 </a>
                             </li>
@@ -532,9 +533,15 @@
           $(".navbar-collapse").collapse("hide");
         });
     </script>
+    
 
 
     </div> 
     <!-- div content -->
+     <script>
+        // Initialize Bootstrap tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
